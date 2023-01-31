@@ -1,4 +1,4 @@
-package client
+package requests
 
 import (
 	"github.com/vltraheaven/go-microservice-experiments/fastest-mirror/types"
