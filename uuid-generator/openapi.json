@@ -1,0 +1,39 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "UUID Generator",
+    "description": "API Service that provides a randomly-generated UUID",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:9091",
+      "description": "Development API Server"
+    }
+  ],
+  "paths": {
+    "/generate": {
+      "get": {
+        "summary": "Returns a randomly-generated UUID.",
+        "description": "This call returns a randomly generated UUID.",
+        "responses": {
+          "200": {
+            "description": "JSON object",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "uuid": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
