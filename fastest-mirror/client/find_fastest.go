@@ -6,6 +6,8 @@ import (
 	"time"
 )
 
+// FindFastest receives a slice of URLs, sends a GET request to each URL concurrently, and returns an instance of
+// types.Response for the URL that returns a response first.
 func FindFastest(urls []string) types.Response {
 	urlChan := make(chan string)
 	latencyChan := make(chan time.Duration)
