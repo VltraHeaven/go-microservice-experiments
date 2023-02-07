@@ -1,0 +1,32 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Static File server",
+    "description": "A Simple static file server",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080",
+      "description": "Development Static File Server"
+    }
+  ],
+  "paths": {
+    "/static/*": {
+      "get": {
+        "summary": "Provides access to the static file server's hosted files.",
+        "description": "Provides access to the static file server's hosted files.",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
